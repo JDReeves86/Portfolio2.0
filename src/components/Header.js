@@ -1,19 +1,17 @@
 import React from "react";
-import HeadShot from "./headShot";
+import Hero from "./HeroMd";
+import HeadShot from "./HeadShot";
 
 function Header() {
   const name = "Jacob Reeves";
-
   return (
-    <section className="hero mtnBackground">
-      <div className="hero-body level">
-        <div className="level-left">
-          <HeadShot />
-          <h1 className="level-item is-size-1 has-text-weight-bold">{name}</h1>
-        </div>
+    <Hero attr={`hero is-medium`} childAttr={`hero-body level`} spBackground='mtnBackground'>
+      <div className="level-left">
+        <HeadShot />
+        <h1 className="level-item is-size-1 has-text-weight-bold has-text-light">{name}</h1>
       </div>
-    </section>
+    </Hero>
   );
 }
 
-export default Header
+export default Header;

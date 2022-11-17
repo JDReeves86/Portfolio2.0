@@ -1,13 +1,22 @@
 import React from "react";
 import NavbarItem from "./NavbarItem";
 import NavbarList from "./NavbarList";
+import NavBurger from "./NavBurger";
 
-const navItems = ["About", "Projects"];
+const navItems = ["About", "Projects", "Contact"];
 
 function Navbar() {
   return (
-    <nav className="navbar has-background-light" role="navigation" aria-label="main navigation">
-      <div id="navbarBasicExample" className="navbar-menu">
+    <nav
+      className="navbar has-background-light"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div className="navbar-brand">
+        <NavBurger />
+      </div>
+
+      <div className="navbar-menu">
         <div className="navbar-start">
           <NavbarItem links={navItems} />
           <NavbarList />

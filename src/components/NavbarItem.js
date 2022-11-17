@@ -1,8 +1,8 @@
 import React from "react";
 
 function NavbarItem({ links }) {
-  return links.map((el) => {
-    return <a className="navbar-item" href={`./${el}`}>{el}</a>;
+  return links.map((el, i) => {
+    return <a key={i} className="navbar-item" href={`./${el}`}>{el}</a>;
   });
 }
 

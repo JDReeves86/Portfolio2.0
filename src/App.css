@@ -1,6 +1,6 @@
 :root {
-  --red: #c80d0d;
-  --yellow: #f8ca05;
+  --red: #aa0707;
+  --yellow: #f8ab05;
   --blue: #52b2cb;
   --orange: #ffa133;
   --green: #abdb9a;
@@ -17,9 +17,9 @@
 
 .gradientBackground {
 	/* background: linear-gradient(-45deg, #2565b0, #2731b7, #2e21a3, #19106c, #250c58, #3c0c58, #441161, #4b1868, #622686, #823caa, #a759d4); */
-	background: linear-gradient(-45deg, var(--red), var(--orange), var(--yellow));
+	background: linear-gradient(-45deg, var(--red), var(--orange), var(--red));
     background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
+	animation: gradient 30s linear infinite;
 }
 
 @keyframes gradient {
