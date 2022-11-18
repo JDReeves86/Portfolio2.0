@@ -10,7 +10,7 @@ function App() {
   const [page, setPage] = useState(lastVisited);
   useEffect(() => {
     localStorage.setItem("page", page);
-  });
+  }, [ page ]);
   return (
     <div>
       <Header />

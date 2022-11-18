@@ -5,7 +5,6 @@ function IconContainer({ attr, id, children }) {
   return (
     <div className={attr} id={id}>
       {children.map((el) => {
-        console.log(el)
         return (
             <Icon attr={el} />
         )

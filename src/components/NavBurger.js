@@ -1,16 +1,16 @@
 import React from "react";
-import NavbarItem from "./NavbarItem";
 
 const navItems = ["About", "Projects", "Contact"];
 
-function NavBurger() {
+function NavBurger({ isClicked, clicked, attr }) {
   return (
     <a
       role="button"
-      className="navbar-burger"
+      className={`navbar-burger ${attr}`}
       aria-label="menu"
       aria-expanded="false"
       data-target="navbarBasicExample"
+      onClick={() => isClicked(!clicked)}
     >
       <span aria-hidden="true"></span>
       <span aria-hidden="true"></span>

@@ -7,8 +7,8 @@ function ProjectCard({ values }) {
     <div className="cards">
       <div className="cardContent">
         <div className={`cardFront ${values.backgroundImg}`}>
-          <div class="cardBack">
-            <div class="card-content">
+          <div className="cardBack">
+            <div className="card-content">
               <PComponent
                 attr="card-header is-justify-content-center has-text-light"
                 value={[values.title]}
