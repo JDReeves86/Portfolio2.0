@@ -1,9 +1,16 @@
 import React from "react";
 
-function InputControl({ values }) {
+function InputControl({ value, name, change }) {
   return (
     <div className="control">
-      <input className="input" type="text" placeholder={values}></input>
+      <input
+        className="input"
+        type="text"
+        name={name}
+        placeholder={name}
+        onChange={change}
+        value={value}
+      ></input>
     </div>
   );
 }

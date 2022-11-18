@@ -1,15 +1,15 @@
 import React from "react";
 import InputControl from "./InputControl";
 
-function InputLabel({ attr, values }) {
-  return values.map((el, i) => {
+function InputLabel({ attr, name, value, change }) {
+
     return (
       <div>
-        <label key={i} className={attr}>{el}</label>
-        <InputControl values={el} />
+        <label className={attr}>{name}</label>
+        <InputControl value={value} name={name} change={change}/>
       </div>
     );
-  });
+
 }
 
 export default InputLabel;
