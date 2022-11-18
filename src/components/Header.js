@@ -1,15 +1,15 @@
 import React from "react";
 import Hero from "./HeroMd";
-import HeadShot from "./HeadShot";
+import Level from "./Level";
+import H1Component from "./H1Component";
 
 function Header() {
   const name = "Jacob Reeves";
   return (
     <Hero attr={`hero is-medium`} childAttr={`hero-body level`} spBackground='mtnBackground'>
-      <div className="level-left">
-        <HeadShot />
-        <h1 className="level-item is-size-1 has-text-weight-bold has-text-light">{name}</h1>
-      </div>
+      <Level attr="level-left">
+        <H1Component attr="level-item is-size-1 has-text-weight-bold has-text-light" value={name} />
+      </Level>
     </Hero>
   );
 }

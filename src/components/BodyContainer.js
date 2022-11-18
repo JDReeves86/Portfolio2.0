@@ -2,6 +2,7 @@ import React from "react";
 import HeroMd from "./HeroMd";
 import About from "./About";
 import Projects from "./Projects";
+import H1Component from "./H1Component";
 
 function BodyContainer() {
   return (
@@ -9,9 +10,10 @@ function BodyContainer() {
       <HeroMd attr={`hero is-medium`} childAttr={`hero-body`}>
         <About />
       </HeroMd>
-      <div className="level is-mobile">
+      <section>
+        <H1Component attr="has-text-centered is-size-1 mb-5" value="Projects" />
         <Projects />
-      </div>
+      </section>
     </main>
   );
 }

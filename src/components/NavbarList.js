@@ -9,7 +9,7 @@ function NavbarList() {
         <a className="navbar-link">More</a>
 
         <div className="navbar-dropdown">
-            <NavbarItem links={links}/>
+            <NavbarItem links={links} />
         </div>
       </div>
     )
