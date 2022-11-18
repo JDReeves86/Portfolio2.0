@@ -1,12 +1,12 @@
 import React from "react";
 import ColumnSolo from "./ColumnSolo";
 
-function Columns ({ attr }) {
-    return (
-        <div className={`columns ${attr}`}>
-            <ColumnSolo attr='is-full'/>
-        </div>
-    )
+function Columns({ attr, children, childAttr }) {
+  return (
+    <div className={`columns ${attr}`}>
+      <ColumnSolo attr={childAttr}>{children}</ColumnSolo>
+    </div>
+  );
 }
 
-export default Columns
+export default Columns;

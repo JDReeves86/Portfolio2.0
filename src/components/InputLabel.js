@@ -1,12 +1,12 @@
 import React from "react";
 import InputControl from "./InputControl";
 
-function InputLabel({ attr, name, value, change }) {
+function InputLabel({ attr, name, value, change, childAttr }) {
 
     return (
       <div>
         <label className={attr}>{name}</label>
-        <InputControl value={value} name={name} change={change}/>
+        <InputControl attr={childAttr} value={value} name={name} change={change}/>
       </div>
     );
 

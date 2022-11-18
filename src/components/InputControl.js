@@ -1,10 +1,10 @@
 import React from "react";
 
-function InputControl({ value, name, change }) {
+function InputControl({ value, name, change, attr }) {
   return (
     <div className="control">
       <input
-        className="input"
+        className={`input ${attr}`}
         type="text"
         name={name}
         placeholder={name}

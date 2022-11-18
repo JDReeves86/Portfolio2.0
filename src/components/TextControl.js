@@ -1,11 +1,12 @@
 import React from "react";
 
-function TextControl({ value, name, change }) {
+function TextControl({ value, name, change, attr, rows }) {
   return (
     <div className="control">
       <textarea
-        className="textarea"
+        className={`textarea ${attr}`}
         type="text"
+        rows={rows}
         placeholder={name}
         name={name}
         onChange={change}

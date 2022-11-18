@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import InputLabel from "./InputLabel";
 import Button from "./Button";
 import TextLabel from "./TextLabel";
+import H1Component from "./H1Component";
+import Columns from "./Columns";
+import ColumnSolo from "./ColumnSolo";
 
 function Contact({ attr }) {
   let [name, setName] = useState("");
@@ -31,7 +34,7 @@ function Contact({ attr }) {
       email,
       message,
     };
-    
+
     setName("");
     setEmail("");
     setMessage("");
@@ -40,29 +43,40 @@ function Contact({ attr }) {
 
   return (
     <form className={attr}>
-      <InputLabel
-        attr="label mt-4"
-        name="Name"
-        value={name}
-        change={changeState}
-      />
-      <InputLabel
-        attr="label mt-4"
-        name="Email Address"
-        value={email}
-        change={changeState}
-      />
-      <TextLabel
-        attr="label mt-4"
-        name="Message"
-        value={message}
-        change={changeState}
-      />
-      <Button
-        attr="button is-info mt-4"
-        value="Submit"
-        clickHandler={submitForm}
-      />
+      <H1Component attr="is-size-3 has-text-centered" value="Contact" />
+      <Columns attr="is-centered" childAttr={"is-half"}>
+        <InputLabel
+          attr="label mt-4"
+          childAttr="is-info"
+          name="Name"
+          value={name}
+          change={changeState}
+        />
+      </Columns>
+      <Columns attr="is-centered" childAttr={"is-half"}>
+        <InputLabel
+          attr="label mt-4"
+          childAttr="is-info"
+          name="Email Address"
+          value={email}
+          change={changeState}
+        />
+      </Columns>
+      <Columns attr="is-centered" childAttr={"is-half"}>
+        <TextLabel
+          attr="label mt-4"
+          rows="6"
+          name="Message"
+          childAttr="is-primary"
+          value={message}
+          change={changeState}
+        />
+        <Button
+          attr="button is-info mt-4"
+          value="Submit"
+          clickHandler={submitForm}
+        />
+      </Columns>
     </form>
   );
 }
