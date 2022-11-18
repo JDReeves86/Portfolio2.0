@@ -31,6 +31,7 @@ function Contact({ attr }) {
       email,
       message,
     };
+    
     setName("");
     setEmail("");
     setMessage("");
@@ -58,7 +59,7 @@ function Contact({ attr }) {
         change={changeState}
       />
       <Button
-        attr="button is-primary mt-4"
+        attr="button is-info mt-4"
         value="Submit"
         clickHandler={submitForm}
       />
