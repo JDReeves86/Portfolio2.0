@@ -1,20 +1,16 @@
 import React from "react";
+import InputLabel from "./InputLabel";
+import InputControl from "./InputControl";
+import TextLabel from "./TextLabel";
+
+const inputFields = ['Name', 'Email Address'];
+const textFields = ['Message']
 
 function Contact({ attr }) {
     return (
         <form className={attr}>
-            <label className="label">Name</label>
-            <div className="control">
-                <input className="input" type="text" placeholder="Name"></input>
-            </div>
-            <label className="label">Email Address</label>
-            <div className="control">
-                <input className="input" type="text" placeholder="Email Address"></input>
-            </div>
-            <label className="label">Email Address</label>
-            <div className="control">
-                <textarea className="textarea" placeholder="Message"></textarea>
-            </div>
+            <InputLabel attr="label p-2" values={inputFields}/>
+            <TextLabel attr="label p-2" values={textFields}/>
         </form>
     )
 }

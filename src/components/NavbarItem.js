@@ -1,6 +1,7 @@
 import React from "react";
+import App from "../App";
 
-function NavbarItem({ links }) {
+function NavbarItem({ links, setPage }) {
   const resumeDl = async () => {
     const resume = await fetch("Resume.pdf");
     let alink = document.createElement("a");
@@ -38,12 +39,14 @@ function NavbarItem({ links }) {
             {el}
           </a>
         );
+      default: {
+        return (
+          <a key={i} className="navbar-item" onClick={() => setPage(el)}>
+            {el}
+          </a>
+        );
+      }
     }
-    return (
-      <a key={i} className="navbar-item" href={`./${el}`}>
-        {el}
-      </a>
-    );
   });
 }
 

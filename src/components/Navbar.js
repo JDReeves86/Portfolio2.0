@@ -5,7 +5,7 @@ import NavBurger from "./NavBurger";
 
 const navItems = ["About", "Projects", "Contact"];
 
-function Navbar() {
+function Navbar({ setPage }) {
   return (
     <nav
       className="navbar has-background-light"
@@ -18,7 +18,7 @@ function Navbar() {
 
       <div className="navbar-menu">
         <div className="navbar-start">
-          <NavbarItem links={navItems} />
+          <NavbarItem links={navItems} setPage={setPage}/>
           <NavbarList />
         </div>
 
