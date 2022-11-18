@@ -1,14 +1,14 @@
 import React from "react";
-import App from "../App";
 
 function NavbarItem({ links, setPage }) {
   const resumeDl = async () => {
     const resume = await fetch("Resume.pdf");
     let alink = document.createElement("a");
     alink.href = resume.url;
-    alink.download = "SamplePDF.pdf";
+    alink.download = "JRResume.pdf";
     alink.click();
   };
+  
   return links.map((el, i) => {
     switch (el) {
       case "GitHub":
@@ -41,7 +41,9 @@ function NavbarItem({ links, setPage }) {
         );
       default: {
         return (
-          <a key={i} className="navbar-item" onClick={() => setPage(el)}>
+          <a key={i} className="navbar-item" onClick={() => {
+            setPage(el)
+            }}>
             {el}
           </a>
         );

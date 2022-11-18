@@ -18,7 +18,7 @@ function Navbar({ setPage }) {
 
       <div className="navbar-menu">
         <div className="navbar-start">
-          <NavbarItem links={navItems} setPage={setPage}/>
+          <NavbarItem links={navItems} setPage={setPage} />
           <NavbarList />
         </div>
 

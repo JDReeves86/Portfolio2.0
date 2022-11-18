@@ -7,12 +7,6 @@ import Contact from "./Contact";
 
 function BodyContainer({ source }) {
   switch (source) {
-    case "About":
-      return (
-        <HeroMd attr={`hero is-medium`} childAttr={`hero-body`}>
-          <About />
-        </HeroMd>
-      );
     case "Projects":
       return (
         <section>

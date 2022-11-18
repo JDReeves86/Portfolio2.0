@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -6,7 +6,11 @@ import Navbar from "./components/Navbar";
 import BodyContainer from "./components/BodyContainer";
 
 function App() {
-  const [page, setPage] = useState("About");
+  const lastVisited = localStorage.getItem("page");
+  const [page, setPage] = useState(lastVisited);
+  useEffect(() => {
+    localStorage.setItem("page", page);
+  });
   return (
     <div>
       <Header />
