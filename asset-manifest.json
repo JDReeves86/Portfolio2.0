@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio2.0/static/css/main.77958570.css",
-    "main.js": "/Portfolio2.0/static/js/main.a6b6dfbc.js",
+    "main.js": "/Portfolio2.0/static/js/main.0baab2af.js",
     "static/js/787.b9880b36.chunk.js": "/Portfolio2.0/static/js/787.b9880b36.chunk.js",
     "static/media/lucas-davies-jF6GX9rX3Bw-unsplash.jpg": "/Portfolio2.0/static/media/lucas-davies-jF6GX9rX3Bw-unsplash.37bb99aa2a6a66497145.jpg",
     "static/media/food.jpg": "/Portfolio2.0/static/media/food.16c72c98240b0f56da52.jpg",
@@ -10,11 +10,11 @@
     "static/media/brian-mcgowan-LObpG0ku8VM-unsplash.jpg": "/Portfolio2.0/static/media/brian-mcgowan-LObpG0ku8VM-unsplash.8bb685fa1aaf240e9592.jpg",
     "index.html": "/Portfolio2.0/index.html",
     "main.77958570.css.map": "/Portfolio2.0/static/css/main.77958570.css.map",
-    "main.a6b6dfbc.js.map": "/Portfolio2.0/static/js/main.a6b6dfbc.js.map",
+    "main.0baab2af.js.map": "/Portfolio2.0/static/js/main.0baab2af.js.map",
     "787.b9880b36.chunk.js.map": "/Portfolio2.0/static/js/787.b9880b36.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.77958570.css",
-    "static/js/main.a6b6dfbc.js"
+    "static/js/main.0baab2af.js"
   ]
 }
