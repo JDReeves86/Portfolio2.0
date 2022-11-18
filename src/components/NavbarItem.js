@@ -1,12 +1,12 @@
 import React from "react";
 
 function NavbarItem({ links }) {
-  const resumeDl = async (e) => {
+  const resumeDl = async () => {
     const resume = await fetch("Resume.pdf");
-    let alink = document.createElement('a');
-                alink.href = resume.url;
-                alink.download = 'SamplePDF.pdf';
-                alink.click();
+    let alink = document.createElement("a");
+    alink.href = resume.url;
+    alink.download = "SamplePDF.pdf";
+    alink.click();
   };
   return links.map((el, i) => {
     switch (el) {
