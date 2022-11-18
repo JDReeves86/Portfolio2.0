@@ -7,6 +7,7 @@ function ProjectCard({ values }) {
     <div className="cards">
       <div className="cardContent">
         <div className={`cardFront ${values.backgroundImg}`}>
+        </div>
           <div className="cardBack">
             <div className="card-content">
               <PComponent
@@ -28,7 +29,6 @@ function ProjectCard({ values }) {
               </a>
             </div>
           </div>
-        </div>
       </div>
     </div>
   );

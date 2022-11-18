@@ -13,7 +13,7 @@ const projects = {
         title: 'NerdQuiz',
         description: "Put your nerd knowledge to the test.",
         GHlink: 'https://github.com/JDReeves86/Nerd-Quiz',
-        liveApp: 'enigmatic-river-65357.herokuapp.com',
+        liveApp: 'https://enigmatic-river-65357.herokuapp.com',
         backgroundImg: 'nerdBackground',
         icons: ['fa-brands fa-html5', 'fa-brands fa-css3-alt', 'fa-brands fa-square-js', 'fa-brands fa-node', 'fa-solid fa-database']
     },

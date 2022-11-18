@@ -74,7 +74,8 @@
 }
 
 .cardFront,
-.cardBack {
+.cardBack 
+{
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -82,13 +83,14 @@
 	right: 0;
 	padding: 1rem;
 	transform-style: preserve-3d;
-	backface-visibility: hidden;
+	/* backface-visibility: hidden; */
 }
 
 .cardFront {
 	/* background-color: lightgreen; */
 	border: 1px solid black;
     border-radius: 15px;
+	backface-visibility: hidden;
 	/* margin: 1rem; */
 	/* transform: translateZ(1rem); */
 }
@@ -111,6 +113,7 @@
 .card-content {
 	/* transform: translateZ(1rem); */
     padding: 1rem;
+	backface-visibility: hidden;
 }
 
 .cardBody {
