@@ -15,9 +15,9 @@ function MobileNav({ hits, isClicked, clicked, links, setPage, active }) {
         <NavbarItem links={links} setPage={setPage} />
         <NavbarList />
       </div>
-      <div className="navbar-end">
+      {/* <div className="navbar-end">
         <NavCounter hits={hits}/>
-      </div>
+      </div> */}
     </div>,
   ];
 }

@@ -15,9 +15,9 @@ function DesktopNav({ hits, isClicked, clicked, links, setPage, inactive }) {
         <NavbarItem links={links} setPage={setPage} />
         <NavbarList />
       </div>
-      <div className="navbar-end">
+      {/* <div className="navbar-end">
         <NavCounter hits={hits}/>
-      </div>
+      </div> */}
     </div>,
   ];
 }

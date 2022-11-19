@@ -43,6 +43,24 @@
 	background-size: cover;
 }
 
+.jateBackground {
+	background-image: url('./images/ilya-pavlov-OqtafYT5kTw-unsplash.webp');
+	background-position: center;
+	background-size: cover;
+}
+
+.weatherBackground {
+	background-image: url('./images/noaa-5YryiYcFvtA-unsplash.webp');
+	background-position: center;
+	background-size: cover;
+}
+
+.APIbackground {
+	background-image: url('./images/alina-grubnyak-ZiQkhI7417A-unsplash.webp');
+	background-position: center;
+	background-size: cover;
+}
+
 .gradientBackground {
 	/* background: linear-gradient(-45deg, #2565b0, #2731b7, #2e21a3, #19106c, #250c58, #3c0c58, #441161, #4b1868, #622686, #823caa, #a759d4); */
 	background: linear-gradient(-45deg, var(--red), var(--orange), var(--red));

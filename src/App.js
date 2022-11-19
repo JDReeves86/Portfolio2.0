@@ -11,19 +11,19 @@ function App() {
   useEffect(() => {
     localStorage.setItem("page", page);
   }, [page]);
-  let visits = localStorage.getItem("visits");
-  if (visits == null) {
-    visits = 0;
-  }
-  let [hits, setHits] = useState(visits);
-  useEffect(() => {
-    setHits((parseInt(hits) + 1))
-    localStorage.setItem("visits", hits);
-  }, []);
+  // let visits = localStorage.getItem("visits");
+  // if (visits == null || undefined) {
+  //   visits = 0;
+  // }
+  // let [hits, setHits] = useState(visits);
+  // useEffect(() => {
+  //   setHits((parseInt(hits) + 1));
+  //   localStorage.setItem("visits", hits)
+  // }, []);
   return (
     <div>
       <Header />
-      <Navbar setPage={setPage} hits={hits} />
+      <Navbar setPage={setPage} /> {/* add hits when ready to get visit counter working again */}
       <main className="container is-fluid">
         <BodyContainer source={page} />
       </main>
