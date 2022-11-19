@@ -70,7 +70,7 @@
     > Elected not to complete from a design perspective.
 
 9. WHEN I enter text into the email address field THEN I receive a notification if I have entered an invalid email address.
-    > User must enter valid email address
+    > User must enter valid email address otherwise they are alerted with a helper notification.
 
 10. WHEN I am presented with the Resume section THEN I see a link to a downloadable resume and a list of the developer’s proficiencies.
     > The link to resume in the navbar results in a downloaded copy of my current resume.
