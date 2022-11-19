@@ -9,7 +9,7 @@ function Projects() {
   return keys.map((el) => {
     return (
       <Level attr="level is-mobile">
-        <LevelItem>
+        <LevelItem attr="level-item">
           <ProjectCard values={projects[el]} />
         </LevelItem>
       </Level>

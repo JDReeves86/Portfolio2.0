@@ -1,7 +1,7 @@
 import React from "react";
 
 function LevelItem({ attr, children }) {
-  return <div className={`level-item ${attr}`}>{children}</div>;
+  return <div className={attr}>{children}</div>;
 }
 
 export default LevelItem;

@@ -6,7 +6,7 @@ import NavbarList from "./NavbarList";
 function MobileNav({ isClicked, clicked, links, setPage, active }) {
   return [
     <div className="navbar-brand">
-      <NavBurger isClicked={isClicked} clicked={clicked} attr={active}/>
+      <NavBurger isClicked={isClicked} clicked={clicked} attr={active} />
     </div>,
 
     <div className="navbar-menu is-active">

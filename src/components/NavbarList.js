@@ -3,7 +3,7 @@ import NavbarItem from "./NavbarItem";
 
 const links = ['Resume', 'LinkedIn', 'GitHub', 'Dinosaurs!']
 
-function NavbarList({ mobile }) {
+function NavbarList() {
     return (
         <div className={`navbar-item has-dropdown is-hoverable`}>
         <a className="navbar-link">More</a>

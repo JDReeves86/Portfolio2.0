@@ -25,7 +25,7 @@ const skills = {
   },
   Tools: {
     id: 3,
-    text: "MongoDB, Express, React, Node.js, Bulma, JQuery, JEST, Sequelize",
+    text: "MongoDB, Express.js, React.js, Node.js, Bulma, JQuery, JEST, Sequelize",
   },
   Skills: {
     id: 4,
@@ -37,7 +37,7 @@ function About() {
   return (
     <div>
       <Level attr="level-left">
-        <LevelItem>
+        <LevelItem attr="level-item">
           <Picture
             attr="level-item image is-128x128"
             childAttr="is-rounded"
@@ -45,7 +45,7 @@ function About() {
             src={ProfilePic}
           />
         </LevelItem>
-        <LevelItem>
+        <LevelItem attr="level-item">
           <H1Component value="About Me" attr={`has-text-centered is-size-1`} />
         </LevelItem>
       </Level>

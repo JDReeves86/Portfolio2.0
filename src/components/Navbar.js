@@ -18,7 +18,7 @@ function Navbar({ setPage }) {
           clicked={clicked}
           links={navItems}
           setPage={setPage}
-          active='is-active'
+          active='navbar-burger is-active'
         />
       ) : (
         <DesktopNav
@@ -26,6 +26,7 @@ function Navbar({ setPage }) {
           clicked={clicked}
           links={navItems}
           setPage={setPage}
+          inactive="navbar-burger"
         />
       )}
     </nav>

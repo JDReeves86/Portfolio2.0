@@ -6,7 +6,7 @@ function NavBurger({ isClicked, clicked, attr }) {
   return (
     <a
       role="button"
-      className={`navbar-burger ${attr}`}
+      className={attr}
       aria-label="menu"
       aria-expanded="false"
       data-target="navbarBasicExample"

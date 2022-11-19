@@ -25,6 +25,7 @@ function Contact({ attr }) {
         break;
       default:
         setMessage(inputValue);
+        break;
     }
   };
   const submitForm = (e) => {
