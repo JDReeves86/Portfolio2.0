@@ -9,26 +9,36 @@
   --bords: 30px
 }
 
+.profilePic {
+	height: 128px;
+	width: 128px;
+}
+
+.mern {
+	height: 128px;
+	width: 128px;
+}
+
 .mtnBackground {
-	background-image: url('./images/lucas-davies-jF6GX9rX3Bw-unsplash.jpg');
+	background-image: url('./images/lucas-davies-jF6GX9rX3Bw-unsplash.webp');
 	background-position: center;
 	background-size: cover;
 }
 
 .foodBackground {
-	background-image: url('./images/food.jpg');
+	background-image: url('./images/food.webp');
 	background-position: center;
 	background-size: cover;
 }
 
 .nerdBackground {
-	background-image: url('./images/brian-mcgowan-LObpG0ku8VM-unsplash.jpg');
+	background-image: url('./images/brian-mcgowan-LObpG0ku8VM-unsplash.webp');
 	background-position: center;
 	background-size: cover;
 }
 
 .taskBackground {
-	background-image: url('./images/torbjorn-helgesen-C4FbCe4L_pw-unsplash.jpg');
+	background-image: url('./images/torbjorn-helgesen-C4FbCe4L_pw-unsplash.webp');
 	background-position: center;
 	background-size: cover;
 }
@@ -114,10 +124,6 @@
 	/* transform: translateZ(1rem); */
     padding: 1rem;
 	backface-visibility: hidden;
-}
-
-.cardBody {
-	/* transform: translateZ(1rem); */
 }
 
 #dinner {

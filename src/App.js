@@ -10,11 +10,20 @@ function App() {
   const [page, setPage] = useState(lastVisited);
   useEffect(() => {
     localStorage.setItem("page", page);
-  }, [ page ]);
+  }, [page]);
+  let visits = localStorage.getItem("visits");
+  if (visits == null) {
+    visits = 0;
+  }
+  let [hits, setHits] = useState(visits);
+  useEffect(() => {
+    setHits((parseInt(hits) + 1))
+    localStorage.setItem("visits", hits);
+  }, []);
   return (
     <div>
       <Header />
-      <Navbar setPage={setPage} />
+      <Navbar setPage={setPage} hits={hits} />
       <main className="container is-fluid">
         <BodyContainer source={page} />
       </main>

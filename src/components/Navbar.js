@@ -4,7 +4,7 @@ import MobileNav from "./MobileNav";
 
 const navItems = ["About", "Projects", "Contact"];
 
-function Navbar({ setPage }) {
+function Navbar({ setPage, hits }) {
   const [clicked, isClicked] = useState(false);
   return (
     <nav
@@ -19,6 +19,7 @@ function Navbar({ setPage }) {
           links={navItems}
           setPage={setPage}
           active='navbar-burger is-active'
+          hits={hits}
         />
       ) : (
         <DesktopNav
@@ -27,6 +28,7 @@ function Navbar({ setPage }) {
           links={navItems}
           setPage={setPage}
           inactive="navbar-burger"
+          hits={hits}
         />
       )}
     </nav>
