@@ -4,29 +4,61 @@ import PComponent from "./PComponent";
 import ULComponent from "./ULComponent";
 import Level from "./Level";
 import LevelItem from "./LevelItem";
-import HeadShot from "./HeadShot";
+import Picture from "./Picture";
+import ProfilePic from "../images/Me-head.jpg";
+import MERN from "../images/MERN.jpg";
 
-const about = ["Web and software development is a far cry from nursing, but here I stand. I have spent the past 13 years serving others during their most difficult of times. Over a decade of working with the most vulnerable in a high stakes environment has helped me foster an attitude of constant growth, self reflection and seeking excellence. Spending the last 10 years in critical care, and through the covid pandemic, I have developed an ability to act quickly, think critically, and rapidly adapt to stressful and fluid situations. I now look to blend the past with my future and bring the skills I have developed over the course of my nursing career with my newfound technical abilities. I hope to find a job where I can effectively leverage both of these skill sets to enact change while continuing to expand my knowledge and qualifications."]
-const langs = ["Languages/Applications/Technologies/Skills:"]
+const about = [
+  "Web and software development is a far cry from nursing, but here I stand. I have spent the past 13 years serving others during their most difficult of times. Over a decade of working with the most vulnerable in a high stakes environment has helped me foster an attitude of constant growth, self reflection and seeking excellence. Spending the last 10 years in critical care, and through the covid pandemic, I have developed an ability to act quickly, think critically, and rapidly adapt to stressful and fluid situations. I now look to blend the past with my future and bring the skills I have developed over the course of my nursing career with my newfound technical abilities. I hope to find a position where I can effectively leverage both of these skill sets to help you solve your business needs while continuing to expand my knowledge and qualifications.",
+];
+
+const langs = ["Languages/Applications/Technologies/Skills:"];
+
+const skills = {
+  Languages: {
+    id: 1,
+    text: "HTML5, CSS, JavaScript ES6, SQL",
+  },
+  Applications: {
+    id: 2,
+    text: "GitHub, MongoDB Compass, MySQL, Insomnia",
+  },
+  Tools: {
+    id: 3,
+    text: "MongoDB, Express, React, Node.js, Bulma, JQuery, JEST, Sequelize",
+  },
+  Skills: {
+    id: 4,
+    text: "REST, Test-Driven Development, Object Oriented Programming, Object Related Mapping, Responsive Web Design.",
+  },
+};
 
 function About() {
   return (
     <div>
       <Level attr="level-left">
         <LevelItem>
-          <HeadShot />
+          <Picture
+            attr="level-item image is-128x128"
+            childAttr="is-rounded"
+            alt="it's me"
+            src={ProfilePic}
+          />
         </LevelItem>
         <LevelItem>
           <H1Component value="About Me" attr={`has-text-centered is-size-1`} />
         </LevelItem>
       </Level>
-      
-      <PComponent
-        attr={`has-text-centered py-3`}
-        value= {about}
+
+      <PComponent attr={` py-3`} value={about} />
+      <PComponent attr={"py-3 has-text-weight-bold"} value={langs} />
+      <ULComponent listItems={skills} />
+      <Picture
+        attr="image is-128x128 pt-4 is-centered"
+        childAttr=""
+        alt="MERN"
+        src={MERN}
       />
-      <PComponent attr={'py-3'} value={langs} />
-      <ULComponent />
     </div>
   );
 }

@@ -4,7 +4,7 @@ import Button from "./Button";
 import TextLabel from "./TextLabel";
 import H1Component from "./H1Component";
 import Columns from "./Columns";
-import ColumnSolo from "./ColumnSolo";
+
 
 function Contact({ attr }) {
   let [name, setName] = useState("");
