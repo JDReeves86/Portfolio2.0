@@ -3,6 +3,7 @@ import InputField from "./InputField";
 import Button from "./Button";
 import TextLabel from "./TextLabel";
 import H1Component from "./H1Component";
+import PComponent from "./PComponent";
 import Columns from "./Columns";
 
 
@@ -83,6 +84,9 @@ function Contact({ attr }) {
           value="Submit"
           clickHandler={submitForm}
         />
+      </Columns>
+      <Columns attr="is-centered" childAttr={"is-half"}>
+        <PComponent value={"Message functionality is currently down for maintenance. To contact me please send an email to JDReeves86@gmail.com"}/>
       </Columns>
     </form>
   );

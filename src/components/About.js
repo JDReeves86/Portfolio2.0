@@ -21,7 +21,7 @@ const skills = {
   },
   Applications: {
     id: 2,
-    text: "GitHub, MongoDB Compass, MySQL, Insomnia",
+    text: "GitHub, Insomnia, MongoDB Compass, DBeaver, VSCode, Shell",
   },
   Tools: {
     id: 3,
