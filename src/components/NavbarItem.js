@@ -15,7 +15,7 @@ function NavbarItem({ links, setPage }) {
     alink.download = "Dinosaurs!.pdf";
     alink.click();
   };
-  
+
   return links.map((el, i) => {
     switch (el) {
       case "GitHub":
@@ -51,12 +51,16 @@ function NavbarItem({ links, setPage }) {
           <a key={i} className="navbar-item" onClick={dinosaurs} target="none">
             {el}
           </a>
-        )
+        );
       default: {
         return (
-          <a key={i} className="navbar-item" onClick={() => {
-            setPage(el)
-            }}>
+          <a
+            key={i}
+            className="navbar-item"
+            onClick={() => {
+              setPage(el);
+            }}
+          >
             {el}
           </a>
         );

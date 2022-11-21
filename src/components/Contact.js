@@ -5,13 +5,13 @@ import TextLabel from "./TextLabel";
 import H1Component from "./H1Component";
 import PComponent from "./PComponent";
 import Columns from "./Columns";
-
+import Anchor from "./Anchor";
 
 function Contact({ attr }) {
   let [name, setName] = useState("");
   let [email, setEmail] = useState("");
   let [message, setMessage] = useState("");
-  let [validEmail, setValid] = useState("")
+  let [validEmail, setValid] = useState("");
 
   const changeState = (e) => {
     const { target } = e;
@@ -23,8 +23,13 @@ function Contact({ attr }) {
         setName(inputValue);
         break;
       case "Email Address":
-        const regex = new RegExp("[a-z0-9]+@[a-z]+\\.[a-z]{2,3}", "g") /* eslint-disable-line */
-        regex.test(inputValue) ? setValid("") : setValid("Please enter a valid e-mail address")
+        const regex = new RegExp(
+          "[a-z0-9]+@[a-z]+\\.[a-z]{2,3}",
+          "g"
+        ); /* eslint-disable-line */
+        regex.test(inputValue)
+          ? setValid("")
+          : setValid("Please enter a valid e-mail address");
         setEmail(inputValue);
         break;
       default:
@@ -56,14 +61,14 @@ function Contact({ attr }) {
           name="Name"
           value={name}
           change={changeState}
-          help={['']}
+          help={[""]}
         />
       </Columns>
       <Columns attr="is-centered" childAttr={"is-half"}>
         <InputField
           attr="label mt-4"
           childAttr="is-info"
-          type='email'
+          type="email"
           name="Email Address"
           value={email}
           change={changeState}
@@ -86,7 +91,13 @@ function Contact({ attr }) {
         />
       </Columns>
       <Columns attr="is-centered" childAttr={"is-half"}>
-        <PComponent value={"Message functionality is currently down for maintenance. To contact me please send an email to JDReeves86@gmail.com"}/>
+        <PComponent>
+          Message functionality is currently down for maintenance. To contact me
+          please send an email to{" "}
+          <Anchor href="mailto:JDReeves86@gmail.com">
+            JDReeves86@gmail.com
+          </Anchor>
+        </PComponent>
       </Columns>
     </form>
   );

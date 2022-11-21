@@ -53,12 +53,7 @@ function About() {
       <PComponent attr={` py-3`} value={about} />
       <PComponent attr={"py-3 has-text-weight-bold"} value={langs} />
       <ULComponent listItems={skills} />
-      <Picture
-        attr="image pt-4 mern"
-        childAttr=""
-        alt="MERN"
-        src={MERN}
-      />
+      <Picture attr="image pt-4 mern" childAttr="" alt="MERN" src={MERN} />
     </div>
   );
 }

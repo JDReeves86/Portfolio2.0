@@ -1,8 +1,8 @@
 import React from "react";
 
-function PComponent({ value, attr }) {
-  return typeof value == "string" ? (
-    <p className={attr}>{value}</p>
+function PComponent({ value, attr, children }) {
+  return typeof value == "undefined" ? (
+    <p className={attr}>{children}</p>
   ) : (
     value.map((el, i) => {
       return (
