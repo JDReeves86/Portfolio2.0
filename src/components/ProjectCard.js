@@ -14,11 +14,15 @@ function ProjectCard({ values }) {
                 attr="card-header is-justify-content-center has-text-light"
                 value={[values.title]}
               />
-              <IconContainer attr="card-content" id="icons">
+              <IconContainer attr="" id="icons">
                 {values.icons}
               </IconContainer>
               <PComponent
-                attr="is-size-5 has-text-weight-semibold pb-3 has-text-light"
+                attr="is-size-6 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
+                value={[values.tagline]}
+              />
+              <PComponent
+                attr="is-size-6 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
                 value={[values.description]}
               />
               <a href={values.GHlink} target="none">
@@ -48,7 +52,11 @@ function ProjectCard({ values }) {
                 {values.icons}
               </IconContainer>
               <PComponent
-                attr="is-size-5 has-text-weight-semibold pb-3 has-text-light"
+                attr="is-size-6 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
+                value={[values.tagline]}
+              />
+              <PComponent
+                attr="is-size-6 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
                 value={[values.description]}
               />
               <a href={values.GHlink} target="none">

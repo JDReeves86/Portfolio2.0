@@ -4,4 +4,4 @@ function LevelItem({ attr, children }) {
   return <div className={attr}>{children}</div>;
 }
 
-export default LevelItem;
+export default LevelItem; 

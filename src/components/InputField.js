@@ -14,4 +14,4 @@ function InputField({ attr, name, value, change, childAttr, type, help }) {
 
 }
 
-export default InputField;
+export default InputField; 

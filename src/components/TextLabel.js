@@ -16,4 +16,4 @@ function TextLabel({ attr, name, value, change, childAttr, rows }) {
   );
 }
 
-export default TextLabel;
+export default TextLabel; 

@@ -82,12 +82,14 @@
 
 
 .cards {
-	height: 500px;
+	height: 450px;
 	width: 90%;
     margin-left: 3rem;
+	margin-bottom: 5rem;
 }
 
 .cardContent {
+	height: 450px;
 	text-align: center;
 	position: relative;
 	padding: 12rem;
@@ -111,22 +113,17 @@
 	right: 0;
 	padding: 1rem;
 	transform-style: preserve-3d;
-	/* backface-visibility: hidden; */
+	backface-visibility: hidden;
 }
 
 .cardFront {
-	/* background-color: lightgreen; */
+	height: 450px;
 	border: 1px solid black;
     border-radius: 15px;
-	backface-visibility: hidden;
-	/* margin: 1rem; */
-	/* transform: translateZ(1rem); */
 }
 
 .cardBack {
-	/* transform: rotateX(0.5turn); */
 	transform: rotateX(0.5turn);
-	/* background-color: var(--dark); */
     border-radius: 15px;
 }
 
@@ -134,14 +131,7 @@
 	font-size: 2rem;
     text-align: center;
     padding: 1rem;
-	/* transform: translateZ(2rem); */
 	border-bottom: 2px solid black;
-}
-
-.card-content {
-	/* transform: translateZ(1rem); */
-    padding: 1rem;
-	backface-visibility: hidden;
 }
 
 #dinner {

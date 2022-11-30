@@ -6,4 +6,4 @@ function Icon({ attr }) {
     )
 }
 
-export default Icon
+export default Icon 

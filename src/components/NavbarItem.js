@@ -69,4 +69,4 @@ function NavbarItem({ links, setPage }) {
   });
 }
 
-export default NavbarItem;
+export default NavbarItem; 

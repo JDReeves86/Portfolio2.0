@@ -15,4 +15,4 @@ function InputControl({ value, name, change, attr, type }) {
   );
 }
 
-export default InputControl;
+export default InputControl; 

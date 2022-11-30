@@ -35,4 +35,4 @@ function Navbar({ setPage, hits }) {
   );
 }
 
-export default Navbar;
+export default Navbar; 
