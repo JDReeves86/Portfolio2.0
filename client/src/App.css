@@ -26,7 +26,7 @@
 }
 
 .foodBackground {
-	background-image: url('./images/GettyImages-484035675-58fd1a6f5f9b581d59abd857.webp');
+	background-image: url('./images/charlesdeluvio-_p-DIj5LJKc-unsplash.webp');
 	background-position: center;
 	background-size: cover;
 }
@@ -43,20 +43,8 @@
 	background-size: cover;
 }
 
-.jateBackground {
-	background-image: url('./images/ilya-pavlov-OqtafYT5kTw-unsplash.webp');
-	background-position: center;
-	background-size: cover;
-}
-
 .weatherBackground {
 	background-image: url('./images/noaa-kcvlb727mn8-unsplash.webp');
-	background-position: center;
-	background-size: cover;
-}
-
-.APIbackground {
-	background-image: url('./images/alina-grubnyak-ZiQkhI7417A-unsplash.webp');
 	background-position: center;
 	background-size: cover;
 }
