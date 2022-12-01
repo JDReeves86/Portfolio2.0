@@ -6,6 +6,7 @@ import H1Component from "./H1Component";
 import PComponent from "./PComponent";
 import Columns from "./Columns";
 import Anchor from "./Anchor";
+import { contactMe } from "../utils/contactMe"
 
 function Contact({ attr }) {
   let [name, setName] = useState("");
@@ -37,7 +38,7 @@ function Contact({ attr }) {
         break;
     }
   };
-  const submitForm = (e) => {
+  const submitForm = async (e) => {
     e.preventDefault();
     const submission = {
       name,
@@ -49,6 +50,9 @@ function Contact({ attr }) {
     setEmail("");
     setMessage("");
     console.log(submission);
+    try {
+      const response = await contactMe(submission)
+    } catch (err) {console.error(err)}
   };
 
   return (
