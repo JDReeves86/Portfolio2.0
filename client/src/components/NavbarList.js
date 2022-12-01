@@ -1,18 +1,18 @@
 import React from "react";
 import NavbarItem from "./NavbarItem";
 
-const links = ['Resume', 'LinkedIn', 'GitHub', 'Dinosaurs!']
+const links = ["LinkedIn", "GitHub", "Download Resume", "Download Dinosaurs!"];
 
 function NavbarList() {
-    return (
-        <div className={`navbar-item has-dropdown is-hoverable`}>
-        <a className="navbar-link">More</a>
+  return (
+    <div className={`navbar-item has-dropdown is-hoverable`}>
+      <a className="navbar-link">More</a>
 
-        <div className="navbar-dropdown">
-            <NavbarItem links={links} />
-        </div>
+      <div className="navbar-dropdown">
+        <NavbarItem links={links} />
       </div>
-    )
+    </div>
+  );
 }
 
 export default NavbarList;
