@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
-import BodyContainer from "./components/BodyContainer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import BodyContainer from "../components/BodyContainer";
 
-function App() {
+function Home() {
   const lastVisited = localStorage.getItem("page");
   const [page, setPage] = useState(lastVisited);
   useEffect(() => {
@@ -23,7 +22,8 @@ function App() {
   return (
     <div>
       <Header />
-      <Navbar setPage={setPage} /> {/* add hits when ready to get visit counter working again */}
+      <Navbar setPage={setPage} />{" "}
+      {/* add hits when ready to get visit counter working again */}
       <main className="container is-fluid">
         <BodyContainer source={page} />
       </main>
@@ -32,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

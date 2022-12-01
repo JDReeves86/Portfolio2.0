@@ -6,6 +6,7 @@ import H1Component from "./H1Component";
 import PComponent from "./PComponent";
 import Columns from "./Columns";
 import Anchor from "./Anchor";
+import { contactMe } from "../utils/contactMe"
 
 function Contact({ attr }) {
   let [name, setName] = useState("");
@@ -37,7 +38,7 @@ function Contact({ attr }) {
         break;
     }
   };
-  const submitForm = (e) => {
+  const submitForm = async (e) => {
     e.preventDefault();
     const submission = {
       name,
@@ -48,7 +49,11 @@ function Contact({ attr }) {
     setName("");
     setEmail("");
     setMessage("");
-    console.log(submission);
+   
+    try {
+      const { message, info } = await contactMe(submission)
+      console.log(`${message}${info}`)
+    } catch (err) {console.error(err)}
   };
 
   return (
@@ -90,7 +95,7 @@ function Contact({ attr }) {
           clickHandler={submitForm}
         />
       </Columns>
-      <Columns attr="is-centered" childAttr={"is-half"}>
+      {/* <Columns attr="is-centered" childAttr={"is-half"}>
         <PComponent>
           Message functionality is currently down for maintenance. To contact me
           please send an email to{" "}
@@ -98,7 +103,7 @@ function Contact({ attr }) {
             JDReeves86@gmail.com
           </Anchor>
         </PComponent>
-      </Columns>
+      </Columns> */}
     </form>
   );
 }
