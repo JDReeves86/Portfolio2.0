@@ -22,4 +22,4 @@ function MobileNav({ hits, isClicked, clicked, links, setPage, active }) {
   ];
 }
 
-export default MobileNav;
+export default MobileNav; 

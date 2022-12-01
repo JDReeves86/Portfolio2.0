@@ -16,4 +16,4 @@ function TextControl({ value, name, change, attr, rows }) {
   );
 }
 
-export default TextControl;
+export default TextControl; 

@@ -7,5 +7,5 @@ function Anchor({ attr, href, children }) {
     </a>
   );
 }
-
+ 
 export default Anchor;

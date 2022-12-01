@@ -5,4 +5,4 @@ function Button({ attr, value, clickHandler }) {
         <button className={attr} onClick={clickHandler}>{value}</button>
     )
 }
- export default Button
+ export default Button 

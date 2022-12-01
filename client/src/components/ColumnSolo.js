@@ -8,4 +8,4 @@ function ColumnSolo({ attr, children }) {
     )
 }
 
-export default ColumnSolo
+export default ColumnSolo 

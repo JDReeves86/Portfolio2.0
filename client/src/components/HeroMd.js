@@ -8,4 +8,4 @@ function HeroMd({children, spBackground, attr, childAttr }) {
   );
 }
 
-export default HeroMd;
+export default HeroMd; 

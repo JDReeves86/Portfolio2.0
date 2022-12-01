@@ -19,4 +19,4 @@ function NavBurger({ isClicked, clicked, attr }) {
   );
 }
 
-export default NavBurger;
+export default NavBurger; 

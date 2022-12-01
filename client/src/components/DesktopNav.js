@@ -22,4 +22,4 @@ function DesktopNav({ hits, isClicked, clicked, links, setPage, inactive }) {
   ];
 }
 
-export default DesktopNav;
+export default DesktopNav; 
