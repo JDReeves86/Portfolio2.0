@@ -128,7 +128,7 @@ Nav menu dropdown
 
 Link to Github repo: https://github.com/JDReeves86/Portfolio2.0
 
-Link to live page: https://jdreeves86.github.io/Portfolio2.0/
+Link to live page: https://still-savannah-19042.herokuapp.com/
 <br>
 <br>
 <br>
