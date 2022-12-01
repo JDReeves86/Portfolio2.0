@@ -2,7 +2,7 @@
   "name": "expert-waffle-portfolio",
   "version": "1.0.0",
   "description": "---",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/server.js",
@@ -16,10 +16,6 @@
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JDReeves86/Portfolio2.0/issues"
-  },
-  "homepage": "https://github.com/JDReeves86/Portfolio2.0#readme",
   "devDependencies": {
     "concurrently": "^7.6.0"
   }

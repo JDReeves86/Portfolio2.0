@@ -49,9 +49,10 @@ function Contact({ attr }) {
     setName("");
     setEmail("");
     setMessage("");
-    console.log(submission);
+   
     try {
-      const response = await contactMe(submission)
+      const { message, info } = await contactMe(submission)
+      console.log(`${message}${info}`)
     } catch (err) {console.error(err)}
   };
 
@@ -94,7 +95,7 @@ function Contact({ attr }) {
           clickHandler={submitForm}
         />
       </Columns>
-      <Columns attr="is-centered" childAttr={"is-half"}>
+      {/* <Columns attr="is-centered" childAttr={"is-half"}>
         <PComponent>
           Message functionality is currently down for maintenance. To contact me
           please send an email to{" "}
@@ -102,7 +103,7 @@ function Contact({ attr }) {
             JDReeves86@gmail.com
           </Anchor>
         </PComponent>
-      </Columns>
+      </Columns> */}
     </form>
   );
 }
