@@ -49,6 +49,12 @@
 	background-size: cover;
 }
 
+.goblinBackground {
+	background-image: url('./images/kenny-eliason-qo6_mo9dsYg-unsplash.webp');
+	background-position: center;
+	background-size: cover;
+}
+
 .gradientBackground {
 	/* background: linear-gradient(-45deg, #2565b0, #2731b7, #2e21a3, #19106c, #250c58, #3c0c58, #441161, #4b1868, #622686, #823caa, #a759d4); */
 	background: linear-gradient(-45deg, var(--red), var(--orange), var(--red));
@@ -68,6 +74,9 @@
 	}
 }
 
+.projectTitle {
+	border-bottom: solid 1px rgb(69, 69, 69);
+}
 
 .cards {
 	height: 450px;
@@ -85,6 +94,10 @@
 	background-color: var(--blue);
 	transform-style: preserve-3d;
     border-radius: 15px;
+}
+
+.card-content {
+	height: 435px;
 }
 
 .cards:hover .cardContent {

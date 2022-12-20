@@ -4,9 +4,9 @@ import Icon from "./Icon";
 function IconContainer({ attr, id, children }) {
   return (
     <div className={attr} id={id}>
-      {children.map((el) => {
+      {children.map((el, i) => {
         return (
-            <Icon attr={el} />
+            <Icon attr={el} key={i}/>
         )
       })}
     </div>

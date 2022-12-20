@@ -3,10 +3,9 @@ import InputField from "./InputField";
 import Button from "./Button";
 import TextLabel from "./TextLabel";
 import H1Component from "./H1Component";
-import PComponent from "./PComponent";
 import Columns from "./Columns";
-import Anchor from "./Anchor";
-import { contactMe } from "../utils/contactMe"
+import ColumnSolo from "./ColumnSolo";
+import { contactMe } from "../utils/contactMe";
 
 function Contact({ attr }) {
   let [name, setName] = useState("");
@@ -49,51 +48,61 @@ function Contact({ attr }) {
     setName("");
     setEmail("");
     setMessage("");
-   
+
     try {
-      const { message, info } = await contactMe(submission)
-      console.log(`${message}${info}`)
-    } catch (err) {console.error(err)}
+      const { message, info } = await contactMe(submission);
+      console.log(`${message}${info}`);
+    } catch (err) {
+      console.error(err);
+    }
   };
 
   return (
     <form className={attr}>
       <H1Component attr="is-size-3 has-text-centered" value="Contact" />
-      <Columns attr="is-centered" childAttr={"is-half"}>
-        <InputField
-          attr="label mt-4"
-          childAttr="is-info"
-          name="Name"
-          value={name}
-          change={changeState}
-          help={[""]}
-        />
+      <Columns attr="is-centered">
+        <ColumnSolo attr={"is-half"}>
+          <InputField
+            attr="label mt-4"
+            childAttr="is-info"
+            name="Name"
+            value={name}
+            change={changeState}
+            help={[""]}
+          />
+        </ColumnSolo>
       </Columns>
-      <Columns attr="is-centered" childAttr={"is-half"}>
-        <InputField
-          attr="label mt-4"
-          childAttr="is-info"
-          type="email"
-          name="Email Address"
-          value={email}
-          change={changeState}
-          help={[validEmail]}
-        />
+      <Columns attr="is-centered">
+        <ColumnSolo attr={"is-half"}>
+          <InputField
+            attr="label mt-4"
+            childAttr="is-info"
+            type="email"
+            name="Email Address"
+            value={email}
+            change={changeState}
+            help={[validEmail]}
+          />
+        </ColumnSolo>
       </Columns>
-      <Columns attr="is-centered" childAttr={"is-half"}>
-        <TextLabel
-          attr="label mt-4"
-          rows="6"
-          name="Message"
-          childAttr="is-primary"
-          value={message}
-          change={changeState}
-        />
-        <Button
-          attr="button is-info mt-4"
-          value="Submit"
-          clickHandler={submitForm}
-        />
+      <Columns attr="is-centered">
+        <ColumnSolo attr={"is-half"}>
+          <TextLabel
+            attr="label mt-4"
+            rows="6"
+            name="Message"
+            childAttr="is-primary"
+            value={message}
+            change={changeState}
+          />
+          <Button
+            attr="button is-info mt-4"
+            value="Submit"
+            action={submitForm}
+          >
+            Submit
+          </Button>
+        </ColumnSolo>
       </Columns>
       {/* <Columns attr="is-centered" childAttr={"is-half"}>
         <PComponent>
@@ -108,4 +117,4 @@ function Contact({ attr }) {
   );
 }
 
-export default Contact; 
+export default Contact;

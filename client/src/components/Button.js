@@ -1,8 +1,8 @@
 import React from "react";
 
-function Button({ attr, value, clickHandler }) {
+function Button({ attr, action, children }) {
     return(
-        <button className={attr} onClick={clickHandler}>{value}</button>
+        <button className={`button ${attr}`} onClick={action} >{children}</button>
     )
 }
  export default Button 

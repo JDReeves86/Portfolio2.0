@@ -2,73 +2,58 @@ import React from "react";
 import PComponent from "./PComponent";
 import IconContainer from "./IconContainer";
 
-function ProjectCard({ values }) {
+function ProjectCard({ values, action, state }) {
   if (!values.liveApp) {
     return (
       <div className="cards">
         <div className="cardContent">
           <div className={`cardFront ${values.backgroundImg}`}></div>
+
           <div className="cardBack">
-            <div className="card-content">
-              <PComponent
-                attr="card-header is-justify-content-center has-text-light"
-                value={[values.title]}
-              />
-              <IconContainer attr="" id="icons">
-                {values.icons}
-              </IconContainer>
-              <PComponent
-                attr="is-size-6 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
-                value={[values.tagline]}
-              />
-              <PComponent
-                attr="is-size-6 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
-                value={[values.description]}
-              />
-              <a href={values.GHlink} target="none">
+            <a
+              onClick={() => {
+                action(state)
+              }}
+            >
+              <div className="card-content">
                 <PComponent
-                  attr="has-text-weight-bold"
-                  value={["GitHub Repository"]}
+                  attr="card-header is-justify-content-center has-text-light"
+                  value={[values.title]}
                 />
-              </a>
-              <PComponent attr="has-text-weight-bold" value={["No live app available."]} />
-            </div>
+                <PComponent
+                  attr="is-size-7 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
+                  value={[values.tagline]}
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>
-  )}
-  else {
+    );
+  } else {
     return (
       <div className="cards">
         <div className="cardContent">
           <div className={`cardFront ${values.backgroundImg}`}></div>
+
           <div className="cardBack">
-            <div className="card-content">
-              <PComponent
-                attr="card-header is-justify-content-center has-text-light"
-                value={[values.title]}
-              />
-              <IconContainer attr="card-content" id="icons">
-                {values.icons}
-              </IconContainer>
-              <PComponent
-                attr="is-size-6 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
-                value={[values.tagline]}
-              />
-              <PComponent
-                attr="is-size-6 is-size-5-tablet has-text-weight-semibold pb-3 has-text-light"
-                value={[values.description]}
-              />
-              <a href={values.GHlink} target="none">
+            <a
+              onClick={() => {
+                action(state)
+              }}
+            >
+              <div className="card-content">
                 <PComponent
-                  attr="has-text-weight-bold"
-                  value={["GitHub Repository"]}
+                  attr="card-header is-justify-content-center has-text-light mb-6"
+                  value={[values.title]}
                 />
-              </a>
-              <a href={values.liveApp} target="none">
-                <PComponent attr="has-text-weight-bold" value={["Live App"]} />
-              </a>
-            </div>
+
+                <PComponent
+                  attr="is-size-6 is-size-5-tablet has-text-weight-semibold mt-6 py-3 has-text-light"
+                  value={[values.tagline]}
+                />
+              </div>
+            </a>
           </div>
         </div>
       </div>

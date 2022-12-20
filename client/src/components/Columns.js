@@ -1,10 +1,9 @@
 import React from "react";
-import ColumnSolo from "./ColumnSolo";
 
-function Columns({ attr, children, childAttr }) {
+function Columns({ attr, children }) {
   return (
     <div className={`columns ${attr}`}>
-      <ColumnSolo attr={childAttr}>{children}</ColumnSolo>
+      {children}
     </div>
   );
 }
