@@ -1,7 +1,7 @@
 import React from "react";
 import NavbarItem from "./NavbarItem";
 
-const links = ["LinkedIn", "GitHub", "Download Resume", "Download Dinosaurs!"];
+const links = ["LinkedIn", "GitHub", "Resume", "Download Dinosaurs!"];
 
 function NavbarList() {
   return (

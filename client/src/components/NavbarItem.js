@@ -42,11 +42,16 @@ function NavbarItem({ links, setPage }) {
         );
       case "Resume":
         return (
-          <a key={i} className="navbar-item" onClick={resumeDl} target="none">
+          <a
+            key={i}
+            className="navbar-item"
+            href={`https://docs.google.com/document/d/1lZ0oq_g1BTosezgiiM0GG5BTYMFUDMLd/edit?usp=sharing&ouid=105025530709824252770&rtpof=true&sd=true`}
+            target="none"
+          >
             {el}
           </a>
         );
-      case "Dinosaurs!":
+      case "Download Dinosaurs!":
         return (
           <a key={i} className="navbar-item" onClick={dinosaurs} target="none">
             {el}
@@ -69,4 +74,4 @@ function NavbarItem({ links, setPage }) {
   });
 }
 
-export default NavbarItem; 
+export default NavbarItem;
