@@ -64,20 +64,22 @@ const projects = {
   },
   TaskTracker: {
     id: 3,
-    title: "Task Tracker",
+    title: "Not Your Fathers Planner",
     tagline:
-      "Get some stuff done.",
-    description: "A simple task tracking application for you to keep track of day to day tasks. Uses local storage to add and remove tasks. Simple UI, no login required. Sole developer of project.",
-    GHlink: "https://github.com/JDReeves86/Task-tracker",
-    liveApp: "https://jdreeves86.github.io/Task-tracker/",
+      "Definitely NOT your Fathers planner.",
+    description: "An application that as of now allows users to create an account and save tasks. Currently a work in progress, future development will include the ability to add note books, link notes to tasks, and manage a calendar. Sole developer on the project. Currently not delpoyed live; will require user to clone repo and run locally. Currently requires mongoDB be installed on local computer for use.",
+    GHlink: "https://github.com/JDReeves86/my-organizer-app",
+    liveApp: "#",
     backgroundImg: "taskBackground",
     image: taskImg,
     icons: [
-      "fa-brands fa-html5",
+      "fa-brands fa-react",
       "fa-brands fa-css3-alt",
       "fa-brands fa-square-js",
+      "fa-brands fa-node-js",
+      "fa-solid fa-database"
     ],
-    technologies: "HTML, CSS, Bulma, JavaScript"
+    technologies: "HTML, CSS, Bulma, JavaScript, mongoDB/mongoose, React, graphQL, Apollo Server"
   },
   // JATE: {
   //     id: 4,
