@@ -1,4 +1,4 @@
-exports.handler = async function (event, context) {
+exports.handler = async function (event, context, callback) {
   console.log(event.body);
   const body = JSON.parse(event.body);
   const { name, email, message } = body;
@@ -24,11 +24,9 @@ exports.handler = async function (event, context) {
       info: info.messageId,
     };
 
-    return {
-      statusCode: 200,
-      body: JSON.stringify(returnMessage),
-    };
+    console.log(info)
+    callback(null, { statusCode: 200, body: JSON.stringify(returnMessage)})
   } catch (error) {
-    console.error(error);
+    callback(error);
   }
 };
