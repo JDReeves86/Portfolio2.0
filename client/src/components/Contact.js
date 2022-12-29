@@ -53,7 +53,7 @@ function Contact({ attr }) {
 
 
     try {
-      request.open("POST", "/netlify/functions/nodemail");
+      request.open("POST", "https://63ae0138338f492fb15a2b55--deluxe-dodol-bf6032.netlify.app/netlify/functions/nodemail");
       request.send(JSON.stringify(submission))
       // const { message, info } = await contactMe(submission);
       // console.log(`${message}${info}`);
