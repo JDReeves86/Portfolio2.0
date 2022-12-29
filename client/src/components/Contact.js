@@ -45,15 +45,18 @@ function Contact({ attr }) {
       message,
     };
 
+    const request = new XMLHttpRequest();
+
     setName("");
     setEmail("");
     setMessage("");
 
-    console.log(submission)
 
     try {
-      const { message, info } = await contactMe(submission);
-      console.log(`${message}${info}`);
+      request.open("POST", "/.netlify/functions/nodemail");
+      request.send(JSON.stringify(submission))
+      // const { message, info } = await contactMe(submission);
+      // console.log(`${message}${info}`);
     } catch (err) {
       console.error(err);
     }
