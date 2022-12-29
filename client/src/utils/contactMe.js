@@ -1,5 +1,5 @@
 export const contactMe = async (input) => {
-  const response = await fetch("/", {
+  const response = await fetch("./netlify/functions/nodemail.js", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
