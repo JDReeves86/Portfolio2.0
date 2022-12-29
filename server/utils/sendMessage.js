@@ -26,10 +26,14 @@ async function sendMessage(input) {
     text: `Hello, my name is ${name}, \n ${message} \n I can be contacted at ${email}`, // plain text body
     html: `Hello, my name is ${name}, \n ${message} \n I can be contacted at ${email}`, // html body
   });
+  const returnMessage = {
+    message: "Message sent: ",
+    info: info.messageId
+  }
 
   return {
-    message: "Message sent: ",
-    info: info.messageId,
+    statusCode: 200,
+    body: JSON.stringify(returnMessage)
   };
   // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 }
