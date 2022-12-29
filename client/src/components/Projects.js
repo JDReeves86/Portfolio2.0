@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Columns from "./Columns";
 import ColumnSolo from "./ColumnSolo";
-import LevelItem from "./LevelItem";
 import ProjectCard from "./ProjectCard";
-import Level from "./Level";
 import ProjectDetails from "./ProjectDetails";
 import projects from "../data/projects";
 

@@ -49,6 +49,8 @@ function Contact({ attr }) {
     setEmail("");
     setMessage("");
 
+    console.log(submission)
+
     try {
       const { message, info } = await contactMe(submission);
       console.log(`${message}${info}`);
