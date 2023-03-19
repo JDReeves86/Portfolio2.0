@@ -50,7 +50,7 @@ const projects = {
     tagline: "Help your neighbors, build up your community.",
     description: "An invite only social networking app designed for communities. Members of a neighborhood may be invited by the admin of their neighborhood to participate. Neighbors can post their needs, and their neighbors can choose to accept jobs and help support their community. Created as a group project. Contributions included React state management, building GraphQL queries, mutations, and data destructuring / rendering.",
     GHlink: "https://github.com/JDReeves86/GoMode",
-    liveApp: "https://gomodez.herokuapp.com/",
+    liveApp: "https://goblinmode.onrender.com/",
     backgroundImg: "goblinBackground",
     image: goblinImg,
     icons: [
