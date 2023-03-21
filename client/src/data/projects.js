@@ -48,7 +48,7 @@ const projects = {
     id: 6,
     title: "GoMode",
     tagline: "Help your neighbors, build up your community.",
-    description: "An invite only social networking app designed for communities. Members of a neighborhood may be invited by the admin of their neighborhood to participate. Neighbors can post their needs, and their neighbors can choose to accept jobs and help support their community. Created as a group project. Contributions included React state management, building GraphQL queries, mutations, and data destructuring / rendering.",
+    description: "An invite only social networking app designed for communities. Members of a neighborhood may be invited by the admin of their neighborhood to participate. Neighbors can post their needs, and their neighbors can choose to accept jobs and help support their community. Created as a group project. Contributions included React state management, building GraphQL queries, mutations, and data destructuring / rendering. For demonstration of full site functionality, please use my contact form to request a demo.",
     GHlink: "https://github.com/JDReeves86/GoMode",
     liveApp: "https://goblinmode.onrender.com/",
     backgroundImg: "goblinBackground",
