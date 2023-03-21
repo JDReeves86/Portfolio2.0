@@ -67,7 +67,7 @@ const projects = {
     title: "Not Your Fathers Planner",
     tagline:
       "Definitely NOT your Fathers planner.",
-    description: "An application that as of now allows users to create an account and save tasks. Currently a work in progress.",
+    description: "Make an account to take notes, and save tasks. Currently a work in progress.",
     GHlink: "https://github.com/JDReeves86/my-organizer-app",
     liveApp: "https://notyourfathersplanner.onrender.com/",
     backgroundImg: "taskBackground",
