@@ -67,9 +67,9 @@ const projects = {
     title: "Not Your Fathers Planner",
     tagline:
       "Definitely NOT your Fathers planner.",
-    description: "An application that as of now allows users to create an account and save tasks. Currently a work in progress, future development will include the ability to add note books, link notes to tasks, and manage a calendar. Sole developer on the project. Currently not delpoyed live; will require user to clone repo and run locally. Currently requires mongoDB be installed on local computer for use.",
+    description: "An application that as of now allows users to create an account and save tasks. Currently a work in progress.",
     GHlink: "https://github.com/JDReeves86/my-organizer-app",
-    liveApp: "#",
+    liveApp: "https://notyourfathersplanner.onrender.com/",
     backgroundImg: "taskBackground",
     image: taskImg,
     icons: [
