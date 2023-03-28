@@ -31,7 +31,7 @@ const projects = {
     description:
       " Take and create quizzes to build up your Nerd Level and compete with other nerds to be crowned the Uber Nerd. Created as a group project. Contributions included database schema design and data fetching/destructuring.",
     GHlink: "https://github.com/JDReeves86/Nerd-Quiz",
-    liveApp: "https://enigmatic-river-65357.herokuapp.com",
+    liveApp: "https://nerd-quiz.onrender.com/",
     backgroundImg: "nerdBackground",
     image: nerdQuiz,
     icons: [
